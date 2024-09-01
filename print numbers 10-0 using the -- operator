@@ -1,0 +1,12 @@
+#include <iostream>
+int main()
+{
+	int sub = 10;
+	while (sub >= 0) {
+		std::cout << sub << std::endl; //print numbers 10-0 on a new line each time
+		--sub; //subtract 1 from sub until sub is 0
+	}
+	std::cout << " " << std::endl; //space to separate numbers and words
+	std::cout << "blast off!!" << std::endl; //print "blast off!!" after the last number, 0
+	return 0;
+}
