@@ -1,0 +1,28 @@
+#include <iostream>
+int main()
+{
+	int v1 = 0, v2 = 0;
+	std::cout << "Enter two numbers." << std::endl;
+	std::cin >> v1 >> v2;
+	std::cout << "The range between " << v1 << " and " << v2 << " is:" << std::endl;
+	if (v1 > v2) {
+		while (v1 >= v2) {
+			std::cout << v2 << std::endl;
+			++v2;
+		}
+	}
+	else if (v1 < v2) {
+		while (v1 <= v2) {
+			std::cout << v1 << std::endl;
+			++v1;
+		}
+	}
+	else if (v1 = v2) {
+		std::cout << v1 << std::endl;
+		std::cout << "Enter two DIFFERENT numbers! >:/" << std::endl;
+	}
+	else {
+		std::cout << "What? What did you do?" << std::endl;
+	}
+	return 0;
+} // i'm pretty sure i did this way wrong but i'm too lazy to figure out what i was supposed to do
